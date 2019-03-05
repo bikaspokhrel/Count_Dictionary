@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
@@ -20,7 +21,8 @@ namespace Count_Dictionary
         private void btnCount_Click(object sender, EventArgs e)
         {
             var Letters = new Dictionary<char, int>();
-            string word = txtInputWord.Text;
+            string word = File.ReadAllText("try.txt");
+            //txtInputWord.Text;
             //"if word is the word and bird is the word then word is the bird";
             // for each letter in the word
             foreach (char a in word)
