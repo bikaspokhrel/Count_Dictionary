@@ -30,6 +30,8 @@
         {
             this.btnCount = new System.Windows.Forms.Button();
             this.lbxCountresult = new System.Windows.Forms.ListBox();
+            this.txtInputWord = new System.Windows.Forms.TextBox();
+            this.btnClear = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnCount
@@ -51,16 +53,36 @@
             this.lbxCountresult.Size = new System.Drawing.Size(175, 308);
             this.lbxCountresult.TabIndex = 1;
             // 
+            // txtInputWord
+            // 
+            this.txtInputWord.Location = new System.Drawing.Point(145, 46);
+            this.txtInputWord.Name = "txtInputWord";
+            this.txtInputWord.Size = new System.Drawing.Size(255, 22);
+            this.txtInputWord.TabIndex = 2;
+            // 
+            // btnClear
+            // 
+            this.btnClear.Location = new System.Drawing.Point(178, 213);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(122, 58);
+            this.btnClear.TabIndex = 3;
+            this.btnClear.Text = "Clear";
+            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnClear);
+            this.Controls.Add(this.txtInputWord);
             this.Controls.Add(this.lbxCountresult);
             this.Controls.Add(this.btnCount);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -68,6 +90,8 @@
 
         private System.Windows.Forms.Button btnCount;
         private System.Windows.Forms.ListBox lbxCountresult;
+        private System.Windows.Forms.TextBox txtInputWord;
+        private System.Windows.Forms.Button btnClear;
     }
 }
 

@@ -20,7 +20,8 @@ namespace Count_Dictionary
         private void btnCount_Click(object sender, EventArgs e)
         {
             var Letters = new Dictionary<char, int>();
-            string word = "if word is the word and bird is the word then word is the bird";
+            string word = txtInputWord.Text;
+            //"if word is the word and bird is the word then word is the bird";
             // for each letter in the word
             foreach (char a in word)
             {
@@ -41,6 +42,11 @@ namespace Count_Dictionary
             {
                 lbxCountresult.Items.Add(pair.Key + " --> " + pair.Value);
             }
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            lbxCountresult.Items.Clear();
         }
     }
 }
